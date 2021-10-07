@@ -1,9 +1,9 @@
+name: hello-world
+on: push
 jobs:
-  build:
-    name: Hello world action
+  my-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "Mona"
+      - name: "Mona"
+        run: echo "Hello World!"
+        
